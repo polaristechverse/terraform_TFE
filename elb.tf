@@ -4,8 +4,8 @@ module "elb" {
   tgname         = "PolarisProdTG"
   vpc_id         = module.network.vpc_id
   env            = module.network.env
-  PrivateServers = module.instace.privateInstance
-  PublicServers  = module.instace.PublicInstace
+  PrivateServers = module.instace.PrivateInstance
+  PublicServers  = module.instace.PublicInstance
   nlbname        = "polarisnlb"
   Public_subnets = module.network.publicSubnets
   sg_id          = module.security.sg_id
