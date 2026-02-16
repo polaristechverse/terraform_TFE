@@ -1,6 +1,6 @@
 module "instance" {
   source  = "app.terraform.io/PTVEP/instance/aws"
-  version = "1.0.0"
+  version = "1.0.1"
   env     = module.network.env
   ami = {
     us-east-2  = "ami-06e3c045d79fd65d9"
